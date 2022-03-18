@@ -15,9 +15,11 @@ export const useStore =  create(set => ({
   },
   
   removeTodo: todo => {
-    set(state => ({
-      todos: state.todos.filter(t => t.id !== todo.id)
-    }));
+    set(state => {
+      return {
+        todos: state.todos.filter(t => t.id !== todo.id)
+      }
+    });
   },
 
   removeAllTodo: () => {
@@ -27,12 +29,12 @@ export const useStore =  create(set => ({
   },
 
   toggleTodo: todo => {
-    
     set(state => {
-      const idx = state.todos.findIndex(t => t.id === todo.id);
-      
       return {
-        todos: state.todos[idx].completed = !todo.completed
+        todos: state.todos.map(t => ({
+        ...t,
+        completed: t.id === todo.id ? !t.completed : t.completed
+      }))
       }
     })
   }

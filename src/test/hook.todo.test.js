@@ -37,7 +37,6 @@ test('removeTodo', () => {
 })
 
 test('removeAllTodo', () => {
-
   act(() => {
     todos.current.removeAllTodo();
   })
@@ -46,7 +45,6 @@ test('removeAllTodo', () => {
 })
 
 test('toggleTodo', () => {
-
   act(() => {
     todos.current.toggleTodo({id: 1, title: '1', completed: false})
   })
