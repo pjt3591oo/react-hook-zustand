@@ -4,6 +4,14 @@ hooks와 zustand 비교
 
 ### usage
 
+* 의존성 모듈 설치
+
+```bash
+$ npm i
+```
+
+* run test
+
 ```bash
 $ npm test
 
