@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react-hooks";
-import { useStore } from '../stores/todo';
+import { useStore } from '../zustand/todo';
 
 describe('zustand Todo', () => {
   let todos = {};
