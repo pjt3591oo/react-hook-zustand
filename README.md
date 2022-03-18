@@ -2,7 +2,7 @@
 
 hooks와 zustand 비교
 
-이외의 글로벌 상태 관리자인 redux, context도 같이 다룬다.
+이외의 글로벌 상태 관리자인 redux, context, mobx도 같이 다룬다.
 
 ### usage
 
