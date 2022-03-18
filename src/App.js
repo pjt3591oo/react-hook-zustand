@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import LangProvider from './context/lang';
+
+import Title from './components/title';
+import TitleChange from './components/titleChange';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LangProvider >
+        <div>
+          <TitleChange />
+          <Title />
+        </div>
+      </LangProvider>
     </div>
   );
 }
