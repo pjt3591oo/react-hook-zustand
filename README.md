@@ -2,6 +2,8 @@
 
 hooks와 zustand 비교
 
+이외의 글로벌 상태 관리자인 redux, context도 같이 다룬다.
+
 ### usage
 
 * 의존성 모듈 설치
@@ -15,14 +17,15 @@ $ npm i
 ```bash
 $ npm test
 
+ PASS  src/test/rtk.todo.test.js
+ PASS  src/test/zustand.todo.test.js
  PASS  src/test/hook.todo.test.js
- PASS  src/test/App.test.js
- PASS  src/test/store.todo.test.js
+ PASS  src/test/context.lang.test.js
 
-Test Suites: 3 passed, 3 total
-Tests:       9 passed, 9 total
+Test Suites: 4 passed, 4 total
+Tests:       14 passed, 14 total
 Snapshots:   0 total
-Time:        2.146 s
+Time:        1.856 s, estimated 2 s
 Ran all test suites.
 
 Watch Usage: Press w to show more.
